@@ -29,7 +29,7 @@ pdf-enrichment is provided as open-source software under the MIT License. See [L
 
 ## Contact
 
-https://github.com/PierreSenellart/provsql
+https://github.com/PierreSenellart/pdf-enrichment
 
 Pierre Senellart <pierre@senellart.com>
 
