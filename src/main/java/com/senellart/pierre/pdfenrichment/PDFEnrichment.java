@@ -62,6 +62,7 @@ public class PDFEnrichment extends PDFTextStripper {
 	public static void main(String[] args) throws IOException {
 		if(args.length!=2) {
 			System.err.println("Usage: java + " + PDFEnrichment.class.getName() + " input.pdf output.pdf");
+			System.exit(1);
 		}
 		
 		PDDocument document = null;
