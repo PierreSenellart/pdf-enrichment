@@ -32,7 +32,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.senellart.pierre.PDFEnrichment</mainClass>
+							<mainClass>com.senellart.pierre.pdfenrichment.PDFEnrichment</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
