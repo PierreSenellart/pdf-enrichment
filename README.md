@@ -1,5 +1,5 @@
 # pdf-enrichment
-Tool to automatically enrich PDFs of research articles with additional information (hyperlinks, metadata, etc.). This tool is under development; for now, as a proof of concept, the tool turns URLs in PDF document into hyperlinks.
+Tool to automatically enrich PDFs of research articles with additional information (hyperlinks, metadata, etc.). This tool is under development; for now, as a proof of concept, the tool turns URLs in PDF documents into hyperlinks.
 
 ## Prerequisites for compilation
 
