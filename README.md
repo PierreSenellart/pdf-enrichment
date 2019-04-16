@@ -1,9 +1,15 @@
 # pdf-enrichment
-Tool to automatically enrich PDFs of research articles with additional information (hyperlinks, metadata, etc.). This tool is under development; for now, as a proof of concept, the tool turns URLs in PDF documents into hyperlinks.
+Tool to automatically enrich PDFs of research articles with additional information (hyperlinks, metadata, etc.). This tool is under development; for now, as a proof of concept, the tool turns URLs in PDF documents into hyperlinks, and turns the title of article in reference entries into a link to their open-access version if any is available (using [Dissemin](https://dissem.in/) to identify such open-access versions).
 
 ## Prerequisites for compilation
 
-pdf-enrichment is programmed in Java, and built using maven. An installation of a reasonably modern JDK (>= 1.8) and of maven is needed. pdf-enrichment makes use of Apache's [PDFBox](https://pdfbox.apache.org/), which is transparently downloaded by maven, and of [Grobid](https://github.com/kermitt2/grobid/), which is included in the distribution (in the [lib/](lib/) folder). 
+pdf-enrichment is programmed in Java, and built using maven. An installation of a reasonably modern JDK (>= 1.8) and of maven is needed.
+
+## Libraries used
+
+pdf-enrichment makes use of Apache's [PDFBox](https://pdfbox.apache.org/) and Google's [JSON.simple](https://code.google.com/archive/p/json-simple/), which are transparently downloaded by maven.
+
+pdf-enrichment also uses [Grobid](https://github.com/kermitt2/grobid/), which is included in the distribution (in the [lib/](lib/) folder). 
 
 ## Compiling
 
