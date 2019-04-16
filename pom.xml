@@ -7,11 +7,42 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PDF Enrichment</name>
 	<description>Tool to automatically enrich PDF of research articles with additional information (hyperlinks, metadata, etc.)</description>
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+    <repositories>
+        <repository>
+            <id>3rd-party-local-repo</id>
+            <name>This is a local repository included in the grobid project, to access 3rd party libs.</name>
+            <url>file:///${basedir}/lib/</url>
+            <layout>default</layout>
+		</repository>
+	</repositories>
 	<dependencies>
+		<dependency>
+            <groupId>org.grobid</groupId>
+            <artifactId>grobid-core</artifactId>
+            <version>0.5.4</version>
+            <exclusions>
+            	<exclusion>
+            		<groupId>org.slf4j</groupId>
+            		<artifactId>slf4j-jdk14</artifactId>
+            	</exclusion>
+            </exclusions>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.pdfbox</groupId>
 			<artifactId>pdfbox</artifactId>
 			<version>2.0.14</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
 			<type>jar</type>
 		</dependency>
 	</dependencies>
